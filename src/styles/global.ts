@@ -2,17 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export const  GlobalStyle = createGlobalStyle`
     
-    :root {
-        --background:#f0f2f5;
+    :root{
+        --background: #f0f2f5;
         --red: #E52E4D;
         --green:#33CC95;
         --blue: #5429CC;
-
         --blue-light: #6933FF;
-
         --text-title: #363F5F;
         --text-body: #969CB3;
-
         --snape: #FFFFFF;
     }
     
@@ -75,6 +72,17 @@ export const  GlobalStyle = createGlobalStyle`
         padding: 3rem;
         position: relative;
         border-radius: 0.24rem;
+    }
+
+    .reat-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+        &:hover {
+            filter: brightness(0.9);
+        }
     }
 
 `
